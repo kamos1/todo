@@ -13,8 +13,8 @@ const style = {
 const App = () => (
   <div style={style}>
     <AddTodo />
-    <VisibleTodoList />
     <Footer />
+    <VisibleTodoList />
   </div>
 )
 
