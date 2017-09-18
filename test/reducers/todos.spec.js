@@ -1,7 +1,12 @@
 import expect from 'expect'
 import todos from '../../reducers/todos'
+import { v4 } from 'node-uuid'
 
 describe('todos reducer', () => {
+  beforeEach(()=> {
+    const random = v4()
+  })
+
   it('should handle initial state', () => {
     expect(
       todos(undefined, {})
@@ -108,5 +113,30 @@ describe('todos reducer', () => {
       }
     ])
   })
+
+ it('should handle DELETE_TODO', () => {
+  expect(
+    todos([
+      {
+        text: 'Run the tests',
+        completed: false,
+        id: 1
+      }, {
+        text: 'Use Redux',
+        completed: false,
+        id: 0
+      }
+    ], {
+      type: 'DELETE_TODO',
+      id: 1
+    })
+  ).toEqual([
+    {
+      text: 'Use Redux',
+      completed: false,
+      id: 0
+    }
+  ])
+})
 
 })
