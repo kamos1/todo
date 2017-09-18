@@ -12,7 +12,14 @@ const Todo = ({ onClick, completed, text }) => (
     >
       {text}
     </li>
-    <button>Delete Todo</button>
+    <button style={{
+      fontSize: '20px',
+      background: '#5e8480',
+      borderStyle: 'none',
+      marginTop: '10px',
+      color: '#FFF'
+    }}>
+    Delete Todo</button>
   </div>
 )
 
