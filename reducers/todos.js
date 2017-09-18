@@ -32,7 +32,7 @@ const todos = (state = [], action) => {
         todo(t, action)
       )
     case 'DELETE_TODO':
-      console.log(state, action)
+      return state.filter(todo => todo.id !== action.id)
     default:
       return state
   }
