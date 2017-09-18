@@ -34,7 +34,7 @@ let AddTodo = ({ dispatch }) => {
         dispatch(addTodo(input.value))
         input.value = ''
       }}>
-        <input style={inputStyle} ref={node => {
+        <input style={inputStyle} placeholder="Enter a task" ref={node => {
           input = node
         }} />
         <button style={buttonStyle} type="submit">

@@ -1,7 +1,7 @@
 import React, { PropTypes } from 'react'
 
 const Todo = ({ onClick, onDelete, completed, text, id }) => (
-  <div>
+  <div style={{marginBottom: '20px'}}>
     <li
       onClick={onClick}
       style={{

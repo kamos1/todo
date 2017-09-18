@@ -5,9 +5,9 @@ import VisibleTodoList from '../containers/VisibleTodoList'
 
 const style = {
   textAlign: 'center',
-  width: '50%',
-  margin: '0 auto',
-  fontFamily: 'Open Sans'
+  fontFamily: 'Open Sans',
+  display: 'flex',
+  flexDirection: 'column'
 }
 
 const App = () => (
