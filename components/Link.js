@@ -1,8 +1,14 @@
 import React, { PropTypes } from 'react'
 
+const linkStyle = {
+  fontSize: '1.2em',
+  padding: '0 5px',
+  textDecoration: 'none'
+}
+
 const Link = ({ active, children, onClick }) => {
   if (active) {
-    return <span>{children}</span>
+    return <span style={linkStyle}>{children}</span>
   }
 
   return (
@@ -11,6 +17,7 @@ const Link = ({ active, children, onClick }) => {
          e.preventDefault()
          onClick()
        }}
+       style={linkStyle}
     >
       {children}
     </a>
