@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
 
-const Todo = ({ onClick, completed, text }) => (
+const Todo = ({ onClick, onDelete, completed, text }) => (
   <div>
     <li
       onClick={onClick}
@@ -12,7 +12,9 @@ const Todo = ({ onClick, completed, text }) => (
     >
       {text}
     </li>
-    <button style={{
+    <button 
+    onClick={onDelete}
+    style={{
       fontSize: '20px',
       background: '#5e8480',
       borderStyle: 'none',
