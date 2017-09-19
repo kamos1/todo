@@ -16,3 +16,7 @@
   margin-top: 20px;
   color: #FFF;
 }
+
+.btn:hover {
+  background: #045e55;
+}
