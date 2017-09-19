@@ -1,26 +1,20 @@
 import React, { PropTypes } from 'react'
+import '../stylesheets/Todo.css'
 
 const Todo = ({ onClick, onDelete, completed, text, id }) => (
-  <div>
+  <div className="todo">
     <li
+      className="todo-text"
       onClick={onClick}
       style={{
-        fontSize: '1.5em',
-        listStyle: 'none',
         textDecoration: completed ? 'line-through' : 'none'
       }}
     >
       {text}
     </li>
-    <button 
-    onClick={onDelete}
-    style={{
-      fontSize: '20px',
-      background: '#5e8480',
-      borderStyle: 'none',
-      marginTop: '10px',
-      color: '#FFF'
-    }}>
+    <button
+    className="todo-btn" 
+    onClick={onDelete}>
     Delete Todo</button>
   </div>
 )

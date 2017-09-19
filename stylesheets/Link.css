@@ -1,0 +1,9 @@
+.links {
+  font-size: 1.2em;
+  padding: 0 5px;
+  text-decoration: none;
+}
+
+.links:hover {
+  color: #ffff00;
+}
