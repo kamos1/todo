@@ -2,16 +2,10 @@ import React from 'react'
 import Footer from './Footer'
 import AddTodo from '../containers/AddTodo'
 import VisibleTodoList from '../containers/VisibleTodoList'
-
-const style = {
-  textAlign: 'center',
-  fontFamily: 'Open Sans',
-  display: 'flex',
-  flexDirection: 'column'
-}
+import '../stylesheets/App.css'
 
 const App = () => (
-  <div style={style}>
+  <div className="container">
     <AddTodo />
     <Footer />
     <VisibleTodoList />
