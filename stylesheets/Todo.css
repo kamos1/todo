@@ -6,3 +6,11 @@
   font-size: 1.5em;
   list-style: none;
 }
+
+.todo-btn {
+  font-size: 20px;
+  background: #5e8480;
+  border-style: none;
+  margin-top: 10px;
+  color: #FFF;
+}
